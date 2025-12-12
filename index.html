@@ -1,7 +1,273 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <h1>Welcome to my Personal Page</h1>
-  <p>Hosted on GitHub Pages!</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JeongHun Park · LLM Researcher</title>
+    <meta
+      name="description"
+      content="JeongHun Park is a Seoul National University researcher exploring large language models, agent architectures, and multimodal systems."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="logo">JH PARK</div>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+          <a href="cv.html">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="container hero-grid">
+          <div>
+            <p class="pill">Large Language Models · Agents · Interpretability</p>
+            <h1>JeongHun <span>Park</span></h1>
+            <p class="tagline">
+              Seoul National University researcher focused on LLM pre- and post-training, agentic tool-use, and
+              multimodal reasoning that pushes models toward self-improving behavior.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="cv.html">View CV</a>
+              <a class="btn btn-secondary" href="#contact">Contact</a>
+            </div>
+          </div>
+          <aside class="profile-card">
+            <img src="assets/images/profile-placeholder.svg" alt="JeongHun Park portrait placeholder" />
+            <h3>Research Intern · Human-Centered Computer System Lab</h3>
+            <p class="meta">Seoul, South Korea</p>
+            <p class="meta">top321902@snu.ac.kr · +82-10-4057-6029</p>
+            <a class="pill" href="https://github.com/PJH6029" target="_blank" rel="noreferrer">GitHub</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="research">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="pill">Research Focus</p>
+              <h2 class="section-title">Modeling future-ready AI systems</h2>
+              <p class="section-description">
+                I explore data, architecture, and tooling decisions that shape how large language models reason,
+                interact, and improve themselves. Current work emphasizes API-grounded agents beyond standard
+                ReAct and scalable evaluation of agentic behaviors.
+              </p>
+            </div>
+          </div>
+          <div class="grid three">
+            <article class="card">
+              <h3>Agent architectures</h3>
+              <p>
+                Designing tool-call orchestration that composes planners, memory, and execution monitors to
+                better solve complex multi-stage tasks.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Training pipelines</h3>
+              <p>
+                Investigating pre- and post-training workflows (LoRA, RLHF/shaping, distillation) that boost
+                sample efficiency without sacrificing alignment.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Interpretability & multimodality</h3>
+              <p>
+                Building insight into how language-first systems can reliably reason across perception channels
+                with transparent intermediate states.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="pill">Experience</p>
+              <h2 class="section-title">How I build and collaborate</h2>
+              <p class="section-description">
+                From academic labs to defense infrastructure, I enjoy combining rigorous research with
+                product-grade engineering.
+              </p>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Human-Centered Computer System Lab, SNU</h3>
+              <span>Research Intern · Apr 2024 – Present</span>
+              <p>
+                Contributing to Lumo, a natural-language agent stack that extends tool-calling and critiques
+                limitations of canonical agent recipes.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>FADU</h3>
+              <span>Software Engineering Intern · Jul 2024 – Aug 2024</span>
+              <p>
+                Built an enterprise RAG chatbot integrating multiple LLM providers and vector stores to surface
+                internal technical documentation through secure workflows.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Seoul National University</h3>
+              <span>Teaching Assistant · Sep 2022 – Present</span>
+              <p>
+                Supporting Computer Programming, Logic Design, Programming Practice, and Basic Computing through
+                lecture prep, recitations, and evaluation.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Republic of Korea Air Force</h3>
+              <span>Information Systems Operator · Apr 2022 – Jan 2024</span>
+              <p>Maintained official web properties and secured internal networks during mandatory service.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="pill">Projects</p>
+              <h2 class="section-title">Selected builds & experiments</h2>
+            </div>
+            <p class="section-description">
+              Many of my prototypes remain private while under review. Below are public-friendly snapshots of
+              recent work.
+            </p>
+          </div>
+          <div class="grid two">
+            <article class="card">
+              <h3>ARC-AGI Task Solver with LoRA</h3>
+              <p>
+                Fine-tuned Qwen3-4B with LoRA and custom data augmentation to improve ARC-AGI task accuracy.
+                Introduced a blended inference pipeline (few-shot prompting, test-time training, majority vote)
+                and a loss design tailored for low-signal samples.
+              </p>
+              <div class="project-stack">
+                <span>Qwen3-4B</span>
+                <span>LoRA</span>
+                <span>PyTorch</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Minimal Deep Learning Framework</h3>
+              <p>
+                Crafted a PyTorch-style framework with dynamic computation graphs, define-by-run autograd, and
+                CuPy-powered GPU ops to demystify DL internals.
+              </p>
+              <div class="project-stack">
+                <span>Python</span>
+                <span>CuPy</span>
+                <span>Automatic Differentiation</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Perspective-Switching RPG</h3>
+              <p>
+                Directed Unity project structure, CI, and Slack automation while implementing seamless 2D↔3D
+                perspective transitions.
+              </p>
+              <div class="project-stack">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Game Systems</span>
+              </div>
+            </article>
+            <article class="card">
+              <h3>National Defense AI Hackathon</h3>
+              <p>
+                Led radar-signal classification team using CNNs to interpret military datasets with operational
+                constraints in mind.
+              </p>
+              <div class="project-stack">
+                <span>Computer Vision</span>
+                <span>Signal Processing</span>
+                <span>PyTorch</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="teaching">
+        <div class="container">
+          <div class="grid two">
+            <div>
+              <p class="pill">Teaching</p>
+              <h2 class="section-title">Mentoring the next wave</h2>
+              <p class="section-description">
+                I love helping peers connect theoretical rigor with engineering practice. Courses I've supported
+                include:
+              </p>
+            </div>
+            <div class="card">
+              <ul>
+                <li>Computer Programming — 2022 Fall (Prof. Lee)</li>
+                <li>Logic Design — 2024 Spring (Prof. Lee)</li>
+                <li>Programming Practice — 2024 Fall (Prof. Jeon)</li>
+                <li>Basic Computing — 2024 Fall (Prof. Kim), 2025 Spring (Prof. Yamada)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="callout">
+            <div class="section-header">
+              <div>
+                <p class="pill">Contact</p>
+                <h2 class="section-title">Let's collaborate</h2>
+                <p class="section-description">
+                  I'm always open to discussing research collaborations, internships, or talks on practical agent
+                  systems. Drop a note and I'll respond quickly.
+                </p>
+              </div>
+              <a class="btn btn-primary" href="mailto:top321902@snu.ac.kr">Email me</a>
+            </div>
+            <div class="contact-grid">
+              <div class="contact-item">
+                <label>Email</label>
+                <strong>top321902@snu.ac.kr</strong>
+              </div>
+              <div class="contact-item">
+                <label>Phone</label>
+                <strong>+82-10-4057-6029</strong>
+              </div>
+              <div class="contact-item">
+                <label>GitHub</label>
+                <strong><a href="https://github.com/PJH6029" target="_blank" rel="noreferrer">PJH6029</a></strong>
+              </div>
+              <div class="contact-item">
+                <label>Location</label>
+                <strong>Seoul National University, South Korea</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© <span id="year"></span> JeongHun Park. Built for reproducible, human-centered AI.</div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
