@@ -1,0 +1,45 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Improve spacing between sections on compact CV layout */
+main {
+  max-width: 800px;
+}
+
+.hero {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1 1 300px;
+}
+
+.hero-content ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+
+.post-title {
+  margin-bottom: 0.75rem;
+}
