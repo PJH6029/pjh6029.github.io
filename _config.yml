@@ -8,6 +8,12 @@ github_username: PJH6029
 email: top321902@snu.ac.kr
 resume_url: CV_JeonghunPark.pdf
 
+profile:
+  location_education: "B.S. Computer Science & Engineering, Seoul National University (Mar 2020 – Feb 2026, expected)"
+  email: "top321902@snu.ac.kr"
+  github: "PJH6029"
+  resume_label: "Download CV"
+
 collections:
   projects:
     output: true
