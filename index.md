@@ -2,6 +2,10 @@
 layout: default
 ---
 
+# Jeonghun Park
+
+---
+
 ## Long Term Goal
 
 Recursively self-improving agents equipped with personalized memory.
@@ -16,7 +20,7 @@ Push the capabilities of large language models across pre-training, post-trainin
 
 ## Experience
 
-### Research Intern · Human-Centered Computer System Lab, SNU (Apr 2024 – Dec 2025)
+### Research Intern · Human-Centered Computer System Lab, SNU (Apr 2025 – Dec 2025)
 - Advancing the Lumo project by developing natural-language agents that rely on robust API-based tool-calling.
 - Exploring limitations of existing agent patterns (e.g., ReAct) and proposing/new prototyping architectures for higher accuracy.
 - Shifted focus from prompt tweaks to system-level agent-pattern research for harder, multi-step tasks.

@@ -17,3 +17,18 @@ plugins:
   - jekyll-remote-theme
 permalink: pretty
 markdown: kramdown
+
+# --- SEO / social preview control ---
+seo:
+  type: Person
+
+author:
+  name: JeongHun Park
+
+social:
+  name: JeongHun Park
+  links:
+    - https://github.com/PJH6029
+
+# Prevent unintended thumbnails
+image: /assets/img/preview.png
