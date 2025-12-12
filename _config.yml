@@ -1,15 +1,19 @@
 title: JeongHun Park
-description: Research intern focused on Multimodal Perception, Commonsense Reasoning, and Computer-Use Agent.
+description: Focused on Multimodal Perception, Commonsense Reasoning, and Computer-Use Agent.
 logo: /assets/img/logo.jpg
+long-term-goal: "Long-term goal: recursively self-improving agents equipped with personalized memory."
+
 url: https://pjh6029.github.io
 github_username: PJH6029
 email: top321902@snu.ac.kr
+resume_url: CV_JeonghunPark.pdf
+
 collections:
   projects:
     output: true
+
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
 permalink: pretty
 markdown: kramdown
-resume_url: CV_JeonghunPark.pdf

@@ -2,20 +2,9 @@
 layout: default
 ---
 
-# JeongHun Park
+## Long Term Goal
 
-<div class="hero">
-  <img class="profile-photo" src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="Portrait of JeongHun Park" />
-  <div class="hero-content">
-    <p>Research intern focused on Multimodal Perception, Commonsense Reasoning, and Computer-Use Agent. Long-term goal: recursively self-improving agents equipped with personalized memory.</p>
-    <ul>
-      <li><strong>Location/Education</strong>: B.S. Computer Science & Engineering, Seoul National University (Mar 2020 – Feb 2026, expected)</li>
-      <li><strong>Contact</strong>: <a href="mailto:top321902@snu.ac.kr">top321902@snu.ac.kr</a></li>
-      <li><strong>GitHub</strong>: <a href="https://github.com/PJH6029">@PJH6029</a></li>
-      <li><strong>Resume</strong>: <a href="{{ '/CV_JeonghunPark.pdf' | relative_url }}">Download CV</a></li>
-    </ul>
-  </div>
-</div>
+Recursively self-improving agents equipped with personalized memory.
 
 ---
 

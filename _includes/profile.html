@@ -1,0 +1,6 @@
+<ul class="profile-info">
+  <li><strong>Location / Education</strong>: {{ site.profile.location_education }}</li>
+  <li><strong>Contact</strong>: <a href="mailto:{{ site.profile.email }}">{{ site.profile.email }}</a></li>
+  <li><strong>GitHub</strong>: <a href="https://github.com/{{ site.profile.github }}">@{{ site.profile.github }}</a></li>
+  <li><strong>Resume</strong>: <a href="{{ site.resume_url | relative_url }}">Download CV</a></li>
+</ul>
