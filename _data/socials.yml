@@ -5,6 +5,5 @@ cv_pdf: /assets/pdf/Jeonghun_Park_CV.pdf # path to your CV PDF file
 email: top321902@snu.ac.kr # your email address
 github_username: PJH6029
 linkedin_username: jeonghun-park-013a8a356
-rss_icon: false # comment this line to hide the RSS icon
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)

@@ -24,7 +24,7 @@ cv:
         studyType: Integrated M.S./Ph.D.
         start_date: 2026-03-01
         highlights:
-          - Physical & Interactive Intelligence Lab (Advisor: Youngjae Yu)
+          - "Physical & Interactive Intelligence Lab (Advisor: Youngjae Yu)"
 
       - institution: Seoul National University
         location: Seoul, South Korea
@@ -33,8 +33,8 @@ cv:
         start_date: 2020-03-01
         end_date: 2026-02-01
         highlights:
-          - Major GPA: 4.09/4.3 (~4.28/4.5)
-          - Overall GPA: 3.93/4.3 (~4.13/4.5), summa cum laude
+          - "Major GPA: 4.09/4.3 (~4.28/4.5)"
+          - "Overall GPA: 3.93/4.3 (~4.13/4.5), summa cum laude"
           - 2022-2024 compulsory military service in the R.O.K. Air Force
 
     Experience:
