@@ -7,6 +7,8 @@ subtitle: Integrated M.S./Ph.D. student in Computer Science and Engineering at S
 profile:
   align: right
   image: jeonghun-park.jpg
+  width: 24%
+  image_max_width: 280px
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Physical &amp; Interactive Intelligence Lab</p>

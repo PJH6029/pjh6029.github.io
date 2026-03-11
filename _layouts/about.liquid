@@ -16,7 +16,19 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div
+        class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}"
+        {% if page.profile.width or page.profile.image_max_width %}
+          style="
+            {% if page.profile.width %}
+              --profile-width: {{ page.profile.width }};
+            {% endif %}
+            {% if page.profile.image_max_width %}
+              --profile-image-max-width: {{ page.profile.image_max_width }};
+            {% endif %}
+          "
+        {% endif %}
+      >
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
