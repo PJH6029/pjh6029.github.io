@@ -1,7 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website — portfolio and CV" />
+  <title>Personal Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <h1>Welcome to my Personal Page</h1>
-  <p>Hosted on GitHub Pages!</p>
+
+  <!-- ===================== SKIP LINK ===================== -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary navigation">
+      <span class="nav-logo" aria-hidden="true">PJH</span>
+      <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="hero-inner container">
+        <div class="hero-photo-wrap">
+          <img
+            src="assets/profile.jpg"
+            alt="Profile photo"
+            class="hero-photo"
+            width="200"
+            height="200"
+          />
+        </div>
+        <div class="hero-text">
+          <h1 id="hero-name">Your Name</h1>
+          <p class="hero-tagline">Software Engineer &amp; Problem Solver</p>
+          <div class="hero-cta">
+            <a href="#cv" class="btn btn-primary">View CV</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">About Me</h2>
+        <p class="section-body">
+          Hi, I'm a passionate developer with a keen interest in building clean,
+          scalable software. I enjoy working across the full stack and love
+          turning complex problems into simple, elegant solutions. When I'm not
+          coding, you can find me hiking, reading, or contributing to open-source
+          projects.
+        </p>
+        <p class="section-body">
+          I hold a degree in Computer Science and have experience in both
+          industry and research environments. I'm always looking for
+          opportunities to learn and grow.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section-title">Skills</h2>
+        <ul class="skill-grid" role="list">
+          <li class="skill-card">
+            <span class="skill-icon" aria-hidden="true">💻</span>
+            <h3>Languages</h3>
+            <p>Python, JavaScript, TypeScript, Java, C++</p>
+          </li>
+          <li class="skill-card">
+            <span class="skill-icon" aria-hidden="true">🌐</span>
+            <h3>Web</h3>
+            <p>HTML, CSS, React, Node.js, REST APIs</p>
+          </li>
+          <li class="skill-card">
+            <span class="skill-icon" aria-hidden="true">🗄️</span>
+            <h3>Data &amp; Databases</h3>
+            <p>SQL, PostgreSQL, MongoDB, pandas</p>
+          </li>
+          <li class="skill-card">
+            <span class="skill-icon" aria-hidden="true">🔧</span>
+            <h3>Tools &amp; Platforms</h3>
+            <p>Git, Docker, Linux, GitHub Actions</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="section" id="cv" aria-labelledby="cv-heading">
+      <div class="container">
+        <h2 id="cv-heading" class="section-title">Curriculum Vitae</h2>
+        <p class="section-body">
+          My CV contains a full overview of my education, work experience,
+          projects, and publications. You can view it directly in your browser
+          or download a copy.
+        </p>
+        <div class="cv-actions">
+          <a
+            href="assets/cv.pdf"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open CV PDF in a new tab"
+          >View CV (PDF)</a>
+          <a
+            href="assets/cv.pdf"
+            class="btn btn-outline"
+            download
+            aria-label="Download CV PDF"
+          >Download CV</a>
+        </div>
+
+        <!-- Inline PDF preview (hidden on small screens) -->
+        <div class="cv-embed-wrap" aria-label="CV preview">
+          <iframe
+            src="assets/cv.pdf"
+            class="cv-embed"
+            title="CV Preview"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">Contact</h2>
+        <p class="section-body">
+          The best way to reach me is via email or LinkedIn. I'm always open
+          to interesting conversations and collaboration.
+        </p>
+        <ul class="contact-list" role="list">
+          <li>
+            <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            <a href="mailto:your@email.com">your@email.com</a>
+          </li>
+          <li>
+            <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a>
+          </li>
+          <li>
+            <svg class="contact-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <a href="https://github.com/pjh6029" target="_blank" rel="noopener noreferrer">github.com/pjh6029</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const menu   = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('is-open');
+    });
+
+    // Close menu on link click
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+      });
+    });
+
+    // Smooth scroll for same-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
